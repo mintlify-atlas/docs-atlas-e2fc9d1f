@@ -1,0 +1,144 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "Spotify SDK for Python",
+  "projectDescription": "A Python SDK for the Spotify Web API with type-safe models and sync/async support",
+  "theme": "palm",
+  "primaryColor": "#94cb04",
+  "lightColor": "#545454",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Authentication",
+            "pages": [
+              "auth/overview",
+              "auth/access-token",
+              "auth/client-credentials",
+              "auth/authorization-code",
+              "auth/token-caching"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/clients",
+              "concepts/services",
+              "concepts/models",
+              "concepts/error-handling",
+              "concepts/retries-and-timeouts"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/pagination",
+              "guides/async-usage",
+              "guides/context-managers"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Clients",
+            "pages": [
+              "api-reference/spotify-client",
+              "api-reference/async-spotify-client"
+            ]
+          },
+          {
+            "group": "Services",
+            "pages": [
+              "api-reference/services/albums",
+              "api-reference/services/artists",
+              "api-reference/services/audiobooks",
+              "api-reference/services/chapters",
+              "api-reference/services/episodes",
+              "api-reference/services/library",
+              "api-reference/services/playlists",
+              "api-reference/services/search",
+              "api-reference/services/shows",
+              "api-reference/services/tracks",
+              "api-reference/services/users"
+            ]
+          },
+          {
+            "group": "Authentication",
+            "pages": [
+              "api-reference/auth/authorization-code",
+              "api-reference/auth/client-credentials",
+              "api-reference/auth/token-cache"
+            ]
+          },
+          {
+            "group": "Models",
+            "pages": [
+              "api-reference/models/overview",
+              "api-reference/models/album",
+              "api-reference/models/artist",
+              "api-reference/models/audiobook",
+              "api-reference/models/playlist",
+              "api-reference/models/track",
+              "api-reference/models/show",
+              "api-reference/models/user",
+              "api-reference/models/common"
+            ]
+          },
+          {
+            "group": "Exceptions",
+            "pages": [
+              "api-reference/exceptions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Type-safe Pydantic models for all API responses",
+    "Sync and async clients with identical APIs",
+    "Automatic retries with exponential backoff",
+    "Multiple authentication flows (access token, client credentials, authorization code)",
+    "Context manager support for clean resource management",
+    "Token caching with pluggable interface"
+  ],
+  "publicApiSurface": [
+    "SpotifyClient",
+    "AsyncSpotifyClient",
+    "SpotifyClient.albums",
+    "SpotifyClient.artists",
+    "SpotifyClient.audiobooks",
+    "SpotifyClient.chapters",
+    "SpotifyClient.episodes",
+    "SpotifyClient.library",
+    "SpotifyClient.playlists",
+    "SpotifyClient.search",
+    "SpotifyClient.shows",
+    "SpotifyClient.tracks",
+    "SpotifyClient.users",
+    "AuthorizationCode",
+    "ClientCredentials",
+    "FileTokenCache",
+    "InMemoryTokenCache",
+    "SpotifyError",
+    "AuthenticationError",
+    "BadRequestError",
+    "ForbiddenError",
+    "NotFoundError",
+    "RateLimitError",
+    "ServerError"
+  ]
+}
